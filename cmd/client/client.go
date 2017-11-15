@@ -28,7 +28,7 @@ func main() {
 	client.OnNewMessage(func(channel string, user twitch.User, message twitch.Message) {
 		log.Println(user.Username, "]", message.Text)
 
-		for _, command := range ignorance.Commands(client) {
+		for _, command := range chatbot.Commands(client) {
 			command.Parse(channel, user, message)
 		}
 	})

@@ -1,4 +1,4 @@
-package ignorance
+package chatbot
 
 import (
 	"chatbot/commands"
